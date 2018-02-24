@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+  
+<html>
+<head>
+      <title>Spring Boot - POST-GET AJAX Example</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body id="body">
+
+<div class="container">
+  <h1>Profiling everything!</h1>
+  <!-- Trigger the modal with a button -->
+  
+  <div>
+  	Java	
+  	<button type="button" class="btn btn-danger btn-lg" id="hash_infinito">Botão travou!</button>
+  	<button type="button" class="btn btn-warning btn-lg"  id="thread_lixo">Thread lixo memoria</button>
+  	<button type="button" class="btn btn-warning btn-lg" id="thread_lixo_20x">Thread lixo memoria</button><span>Aumentado 20x VEZES!</span>
+  </div>
+  
+  <div>
+  	Javascript
+  	<button type="button" class="btn btn-danger btn-lg" id="botao_suspeito">Botão suspeito</button>  	
+  	<button type="button" class="btn btn-primary btn-lg" id="botao_legal">Botão legal</button>
+  </div>
+ 
+ 
+  <div>
+  	MySQL	
+  	<button type="button" class="btn btn-danger btn-lg" id="grandes_dados_banco">Botão grandes dados</button>
+  	<button type="button" class="btn btn-primary btn-lg" id="pequenos_dados_banco">Botão pequenos dados</button>
+  </div>
+
+	<div style="display:none;" class="col-md-4">
+	   <label class="grid-title">Grid pequena</label>
+	   <table id="grid-pequena"></table>
+	</div>
+
+
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="modalId" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Bootstrap Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Header</h4>
+        </div>
+        <div class="modal-body">
+          <p id="greetingId"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/webjars/jquery/3.1.1/jquery.min.js"></script> 
+ 
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/js/getrequest.js"></script>
+<script src="/js/loading.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/free-jqgrid@4.15.3/js/jquery.jqgrid.min.js"></script>
+
+</body>
+</html>
